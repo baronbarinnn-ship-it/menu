@@ -750,7 +750,7 @@
                         <div class="footer-logo">B</div>
                         <span>Bron Service</span>
                     </div>
-                    <div class="footer-counter"><span id="currentIndex">1</span> / <span id="totalIndex">7</span></div>
+                    <div class="footer-counter"><span id="currentIndex">1</span> / <span id="totalIndex">9</span></div>
                 </div>
                 <div class="footer-row">
                     <div class="footer-breadcrumb" id="breadcrumb">Main</div>
@@ -857,7 +857,16 @@
                     { id: "vehicle_speed_multiplier", label: "Vehicle Speed Multiplier", desc: "Araç hız çarpanı.", type: "slider", min: 1, max: 10, value: 1, step: 0.5, default: 1 },
                     { id: "vehicle_boost", label: "Vehicle Boost", desc: "Turbo boost.", type: "checkbox", checked: false, default: false },
                     { id: "vehicle_max_upgrade", label: "Max Vehicle Upgrade", desc: "Tüm modları takar.", type: "button" },
-                    { id: "vehicle_change_plate", label: "Change Plate", desc: "Araç plakasını değiştirir.", type: "button" }
+                    { id: "vehicle_change_plate", label: "Change Plate", desc: "Araç plakasını değiştirir.", type: "button" },
+                    { id: "vehicle_turbo", label: "Turbo", desc: "Araca turbo takar.", type: "checkbox", checked: false, default: false },
+                    { id: "vehicle_rainbow", label: "Rainbow Vehicle", desc: "Araç rengini sürekli değiştirir.", type: "checkbox", checked: false, default: false },
+                    { id: "vehicle_drift", label: "Drift Mode", desc: "Shift basılıyken drift yapar.", type: "checkbox", checked: false, default: false },
+                    { id: "vehicle_autopilot", label: "Drive to Waypoint", desc: "Waypoint'e otomatik sürer.", type: "checkbox", checked: false, default: false },
+                    { id: "vehicle_auto_repair", label: "Auto Repair", desc: "Aracı sürekli tamir eder.", type: "checkbox", checked: false, default: false },
+                    { id: "vehicle_unlimited_fuel", label: "Unlimited Fuel", desc: "Yakıtı sınırsız yapar.", type: "checkbox", checked: false, default: false },
+                    { id: "vehicle_instant_brakes", label: "Instant Brakes", desc: "Anında fren yapar.", type: "checkbox", checked: false, default: false },
+                    { id: "vehicle_unlock_doors", label: "Unlock All Doors", desc: "Tüm kapıları açar.", type: "checkbox", checked: false, default: false },
+                    { id: "vehicle_engine_on", label: "Force Engine On", desc: "Motoru zorla çalıştırır.", type: "checkbox", checked: false, default: false }
                 ]},
                 { id: "cat_weapon", label: "Weapon", desc: "Silah ve mermi yönetimi.", icon: "M15.5 5.5l3 3-10 10H5.5v-3l10-10zm2.5-3l1.5 1.5-2 2-1.5-1.5 2-2zM3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25z", sub: [
                     { id: "weapon_infinite_ammo", label: "Infinite Ammo", desc: "Sınırsız mermi.", type: "checkbox", checked: false, default: false },
@@ -868,7 +877,19 @@
                     { id: "weapon_damage_multiplier", label: "Damage Multiplier", desc: "Hasar çarpanı.", type: "slider", min: 1, max: 100, value: 1, step: 1, default: 1 },
                     { id: "weapon_give_all", label: "Give All Weapons", desc: "Tüm silahları verir.", type: "button" },
                     { id: "weapon_remove_all", label: "Remove All Weapons", desc: "Tüm silahları kaldırır.", type: "button" },
-                    { id: "weapon_give_ammo", label: "Give Ammo", desc: "Mermi verir.", type: "button" }
+                    { id: "weapon_give_ammo", label: "Give Ammo", desc: "Mermi verir.", type: "button" },
+                    { id: "weapon_ragebot", label: "RageBot", desc: "Yakındaki oyunculara otomatik ateş eder.", type: "checkbox", checked: false, default: false },
+                    { id: "weapon_ragebot_fov", label: "RageBot FOV", desc: "RageBot hedef açısı (derece).", type: "slider", min: 10, max: 360, value: 90, step: 5, default: 90 },
+                    { id: "weapon_ragebot_draw_fov", label: "Draw FOV Circle", desc: "RageBot FOV çemberini ekranda göster.", type: "checkbox", checked: false, default: false },
+                    { id: "weapon_laser_eyes", label: "Laser Eyes", desc: "Gözlerinden lazer çıkar, baktığın yere ateş eder.", type: "checkbox", checked: false, default: false },
+                    { id: "weapon_laser_eyes_color", label: "Laser Color", desc: "Lazer rengi.", type: "colorpicker", value: "#ff0000", default: "#ff0000" },
+                    { id: "weapon_damage_boost", label: "Damage Boost", desc: "Silah hasarını çarpar.", type: "checkbox", checked: false, default: false },
+                    { id: "weapon_damage_boost_value", label: "Damage Boost Value", desc: "Hasar çarpanı değeri.", type: "slider", min: 1, max: 100, value: 1, step: 1, default: 1 },
+                    { id: "weapon_weapon_scale", label: "Weapon Scale", desc: "Silahın görsel boyutunu değiştirir.", type: "slider", min: 0.1, max: 5.0, value: 1.0, step: 0.1, default: 1.0 },
+                    { id: "weapon_invisible_weapon", label: "Invisible Weapon", desc: "Elindeki silahı görünmez yapar.", type: "checkbox", checked: false, default: false },
+                    { id: "weapon_instant_reload", label: "Instant Reload", desc: "Anında şarjör değiştirir.", type: "checkbox", checked: false, default: false },
+                    { id: "weapon_rainbow_gun", label: "Rainbow Gun", desc: "Silah renk tonunu sürekli değiştirir.", type: "checkbox", checked: false, default: false },
+                    { id: "weapon_infinite_ammo_pack", label: "Infinite Ammo (Pack)", desc: "Tüm silahlara sınırsız mermi.", type: "checkbox", checked: false, default: false }
                 ]},
                 { id: "cat_visuals", label: "Visuals", desc: "Görsel ayarlar ve ESP.", icon: "M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5z", sub: [
                     { id: "visuals_player_esp", label: "Player ESP", desc: "Oyuncu etrafına kutu çizer.", type: "checkbox", checked: false, default: false },
@@ -889,7 +910,27 @@
                     { id: "visuals_time_cycle", label: "Time Cycle", desc: "Oyun saatini ayarlar.", type: "slider", min: 0, max: 24, value: 12, step: 1, default: 12 },
                     { id: "visuals_fov", label: "FOV Changer", desc: "Görüş açısı.", type: "slider", min: 40, max: 120, value: 60, step: 1, default: 60 },
                     { id: "visuals_third_person_distance", label: "Third Person Distance", desc: "3. şahıs kamera mesafesi.", type: "slider", min: 2, max: 15, value: 5, step: 0.5, default: 5 },
-                    { id: "visuals_crosshair", label: "Crosshair", desc: "Özel crosshair gösterir.", type: "checkbox", checked: false, default: false }
+                    { id: "visuals_crosshair", label: "Crosshair", desc: "Özel crosshair gösterir.", type: "checkbox", checked: false, default: false },
+                    { id: "visuals_esp_name", label: "ESP Name", desc: "Oyuncu isimlerini gösterir.", type: "checkbox", checked: false, default: false },
+                    { id: "visuals_esp_id", label: "ESP ID", desc: "Oyuncu server ID'sini gösterir.", type: "checkbox", checked: false, default: false },
+                    { id: "visuals_esp_show_distance", label: "ESP Distance", desc: "Oyuncuya mesafeyi gösterir.", type: "checkbox", checked: false, default: false },
+                    { id: "visuals_esp_weapon", label: "ESP Weapon", desc: "Oyuncunun elindeki silahı gösterir.", type: "checkbox", checked: false, default: false },
+                    { id: "visuals_esp_health", label: "ESP Health Bar", desc: "Oyuncu can barını gösterir.", type: "checkbox", checked: false, default: false },
+                    { id: "visuals_esp_armor", label: "ESP Armor Bar", desc: "Oyuncu zırh barını gösterir.", type: "checkbox", checked: false, default: false },
+                    { id: "visuals_esp_skeleton", label: "ESP Skeleton", desc: "Oyuncu iskeletini çizer.", type: "checkbox", checked: false, default: false },
+                    { id: "visuals_esp_box", label: "ESP Box", desc: "Oyuncu etrafına kutu çizer.", type: "checkbox", checked: false, default: false },
+                    { id: "visuals_esp_dead", label: "ESP Dead", desc: "Ölü oyuncuları da gösterir.", type: "checkbox", checked: false, default: false },
+                    { id: "visuals_esp_peds", label: "ESP Peds", desc: "NPC'leri de gösterir.", type: "checkbox", checked: false, default: false },
+                    { id: "visuals_esp_max_distance", label: "ESP Max Distance", desc: "ESP render mesafesi.", type: "slider", min: 50, max: 1000, value: 300, step: 10, default: 300 },
+                    { id: "visuals_esp_box_color", label: "ESP Box Color", desc: "Kutu rengi.", type: "colorpicker", value: "#ffffff", default: "#ffffff" },
+                    { id: "visuals_esp_skeleton_color", label: "ESP Skeleton Color", desc: "İskelet rengi.", type: "colorpicker", value: "#ffffff", default: "#ffffff" },
+                    { id: "visuals_vehicle_esp_name", label: "Vehicle ESP Name", desc: "Araç isimlerini gösterir.", type: "checkbox", checked: false, default: false },
+                    { id: "visuals_vehicle_esp_plate", label: "Vehicle ESP Plate", desc: "Araç plakasını gösterir.", type: "checkbox", checked: false, default: false },
+                    { id: "visuals_vehicle_esp_distance", label: "Vehicle ESP Distance", desc: "Araca mesafeyi gösterir.", type: "checkbox", checked: false, default: false },
+                    { id: "visuals_vehicle_esp_info", label: "Vehicle ESP Info", desc: "Araç bilgilerini gösterir.", type: "checkbox", checked: false, default: false },
+                    { id: "visuals_vehicle_esp_marker", label: "Vehicle ESP Marker", desc: "Araç üstüne marker koyar.", type: "checkbox", checked: false, default: false },
+                    { id: "visuals_vehicle_esp_max_distance", label: "Vehicle ESP Max Distance", desc: "Araç ESP mesafesi.", type: "slider", min: 20, max: 300, value: 120, step: 5, default: 120 },
+                    { id: "visuals_vehicle_esp_color", label: "Vehicle ESP Color", desc: "Araç ESP rengi.", type: "colorpicker", value: "#ffffff", default: "#ffffff" }
                 ]},
                 { id: "cat_misc", label: "Misc", desc: "Çeşitli ekstra araçlar.", icon: "M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.03 2.18 13.82 2 13.6 2h-4c-.22 0-.42.18-.45.39l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.22.23.39.45.39h4c.22 0 .42-.18.45-.39l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65z", sub: [
                     { id: "misc_noclip", label: "Noclip", desc: "Serbest uçuş.", type: "checkbox", checked: false, default: false },
@@ -907,7 +948,38 @@
                     { id: "misc_disable_hud", label: "Disable HUD", desc: "HUD'u gizler.", type: "checkbox", checked: false, default: false },
                     { id: "misc_show_fps", label: "Show FPS", desc: "FPS'i gösterir.", type: "checkbox", checked: false, default: false },
                     { id: "misc_show_ping", label: "Show Ping", desc: "Pingi gösterir.", type: "checkbox", checked: false, default: false },
-                    { id: "misc_show_coords", label: "Show Coords", desc: "Koordinatı gösterir.", type: "checkbox", checked: false, default: false }
+                    { id: "misc_show_coords", label: "Show Coords", desc: "Koordinatı gösterir.", type: "checkbox", checked: false, default: false },
+                    { id: "misc_crosshair", label: "Crosshair", desc: "Ekran ortasına crosshair.", type: "checkbox", checked: false, default: false },
+                    { id: "misc_fullbright", label: "Fullbright", desc: "Ortamı aydınlatır.", type: "checkbox", checked: false, default: false },
+                    { id: "misc_no_fog", label: "No Fog", desc: "Sisi kaldırır.", type: "checkbox", checked: false, default: false },
+                    { id: "misc_no_rain", label: "No Rain", desc: "Yağmuru kapatır.", type: "checkbox", checked: false, default: false },
+                    { id: "misc_no_snow", label: "No Snow", desc: "Karı kapatır.", type: "checkbox", checked: false, default: false },
+                    { id: "misc_hide_hud", label: "Hide HUD", desc: "HUD'u gizler.", type: "checkbox", checked: false, default: false }
+                ]},
+                { id: "cat_troll", label: "Troll", desc: "Seçili oyuncu üzerinde şaka ve etkileşim işlemleri.", icon: "M12 2a10 10 0 100 20 10 10 0 000-20zm0 2.5a7.5 7.5 0 015.3 12.8L6.7 6.7A7.47 7.47 0 0112 4.5zM6.7 17.3L17.3 6.7A7.5 7.5 0 016.7 17.3z", sub: [
+                    { id: "troll_explode_player", label: "Explode Player", desc: "Seçili oyuncunun yanında patlama.", type: "button" },
+                    { id: "troll_freeze_player", label: "Freeze Player", desc: "Seçili oyuncuyu dondurur.", type: "button" },
+                    { id: "troll_tp_player", label: "Teleport to Player", desc: "Seçili oyuncunun yanına ışınlanır.", type: "button" },
+                    { id: "troll_tp_player_to_me", label: "Teleport Player to Me", desc: "Seçili oyuncuyu yanına ışınlar.", type: "button" },
+                    { id: "troll_copy_outfit", label: "Copy Player Outfit", desc: "Seçili oyuncunun kıyafetini alır.", type: "button" },
+                    { id: "troll_ram_player", label: "Ram Player", desc: "Yakın aracı oyuncuya sürer.", type: "button" },
+                    { id: "troll_kick_driver", label: "Kick Driver", desc: "Seçili oyuncuyu araçtan atar.", type: "button" },
+                    { id: "troll_bug_vehicle", label: "Bug Vehicle", desc: "Seçili oyuncunun aracını buglar.", type: "button" },
+                    { id: "troll_bring_vehicle", label: "Bring Vehicle", desc: "Seçili oyuncunun aracını yanına getirir.", type: "button" },
+                    { id: "troll_launch_player", label: "Launch Player", desc: "Seçili oyuncuyu fırlatır.", type: "button" }
+                ]},
+                { id: "cat_teleport", label: "Teleport", desc: "Hazır ışınlanma noktaları.", icon: "M12 2L4.5 20.29l.71.71L12 18l6.79 3 .71-.71z", sub: [
+                    { id: "tp_waypoint", label: "TP Waypoint", desc: "Waypoint'e ışınlanır.", type: "button" },
+                    { id: "tp_gunshop_hospital", label: "Gunshop (Hospital)", desc: "Hospital gunshop'a ışınlanır.", type: "button" },
+                    { id: "tp_gunshop_gallery", label: "Gunshop (Gallery)", desc: "Gallery gunshop'a ışınlanır.", type: "button" },
+                    { id: "tp_megamall", label: "MegaMall", desc: "MegaMall'a ışınlanır.", type: "button" },
+                    { id: "tp_vanilla", label: "Vanilla Unicorn", desc: "Vanilla Unicorn'a ışınlanır.", type: "button" },
+                    { id: "tp_pillbox", label: "Pillbox Hospital", desc: "Pillbox Hospital'a ışınlanır.", type: "button" },
+                    { id: "tp_airport", label: "Airport", desc: "Airport'a ışınlanır.", type: "button" },
+                    { id: "tp_michael", label: "Michael's House", desc: "Michael'in evine ışınlanır.", type: "button" },
+                    { id: "tp_trevor", label: "Trevor's Trailer", desc: "Trevor'ın karavanına ışınlanır.", type: "button" },
+                    { id: "tp_franklin", label: "Franklin's House", desc: "Franklin'in evine ışınlanır.", type: "button" },
+                    { id: "tp_fbi", label: "FBI", desc: "FBI binasına ışınlanır.", type: "button" }
                 ]},
                 { id: "cat_settings", label: "Settings", desc: "Menü kısayolları ve ayarlar.", icon: "M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58c.18-.14.23-.41.12-.61l-1.92-3.32c-.12-.22-.37-.29-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54c-.04-.24-.24-.41-.48-.41h-3.84c-.24 0-.43.17-.47.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96c-.22-.08-.47 0-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58c-.18.14-.23.41-.12.61l1.92 3.32c.12.22.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.24.41.48.41h3.84c.24 0 .44-.17.47-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.22.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z", sub: [
                     { id: "settings_keybind", label: "Menu Keybind", desc: "Menü tuşunu değiştirir.", type: "button" },
@@ -1382,6 +1454,16 @@
                     openPlayerList();
                 }
                 post('action', { id: item.id, label: item.label });
+                return;
+            }
+
+            if (item.id.startsWith('troll_')) {
+                if (selectedPlayerId === null) {
+                    showToast('Önce oyuncu seç', 'off');
+                    return;
+                }
+                post('action', { id: item.id, label: item.label, target: selectedPlayerId });
+                showToast(`${item.label} tetiklendi`, 'info');
                 return;
             }
 
